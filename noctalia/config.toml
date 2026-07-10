@@ -1,0 +1,19 @@
+[theme]
+mode = "dark"
+
+[bar.main]
+position = "top"
+
+[shell]
+polkit_agent = true
+
+[shell.launcher]
+categories = false
+compact = true
+
+[shell.panel]
+open_near_click_control_center = true
+
+[weather]
+enabled = false
+

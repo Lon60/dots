@@ -1,0 +1,10 @@
+# generated per device by nwg-displays (written through the ~/.config/hypr symlink)
+hypr/monitors.lua
+hypr/workspaces.lua
+
+# machine-local fish state 
+fish/fish_variables
+fish/conf.d/
+fish/completions/
+fish/functions/
+fish/auto-Hypr.fish
