@@ -14,6 +14,9 @@ hl.bind("SUPER + E", hl.dsp.exec_cmd("dolphin"))
 --lock
 hl.bind("SUPER + SHIFT + Q", hl.dsp.exec_cmd(ipc .. " session lock"))
 
+-- open panel
+hl.bind("CTRL + ALT + DELETE", hl.dsp.exec_cmd(ipc .. " panel-open session"))
+
 --## window keybinds
 hl.bind("SUPER + Q", hl.dsp.window.close())
 
