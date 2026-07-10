@@ -17,3 +17,5 @@ open_near_click_control_center = true
 [weather]
 enabled = false
 
+[widget.clock]
+interactive = false
