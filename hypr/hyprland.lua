@@ -56,6 +56,9 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd(ipc .. " volume-mute"))
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(ipc .. " brightness-up"))
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(ipc .. " brightness-down"))
 
+-- screenshot region -> clipboard
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd([[grim -g "$(slurp -d)" - | wl-copy]]))
+
 -- general
 hl.config({
 
@@ -75,7 +78,7 @@ hl.config({
 	general = {
 		gaps_in = 2,
 		gaps_out = 5,
-		allow_tearing = true,
+		--	allow_tearing = true,
 	},
 
 	decoration = {
@@ -118,7 +121,7 @@ hl.layer_rule({
 	blur_popups = true,
 })
 
-hl.window_rule({ match = { class = "^(steam_app).*" }, immediate = true })
+-- hl.window_rule({ match = { class = "^(steam_app).*" }, immediate = true })
 hl.window_rule({
 	match = { class = "dev.noctalia.Noctalia" },
 	float = true,
