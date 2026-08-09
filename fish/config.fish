@@ -7,3 +7,6 @@ fish_add_path $HOME/.bun/bin
 fish_add_path $HOME/go/bin
 fish_add_path $HOME/.lmstudio/bin
 alias claude="$HOME/.local/bin/claude --dangerously-skip-permissions"
+
+# GPG: let pinentry reach the terminal (needed for YubiKey PIN prompts)
+set -gx GPG_TTY (tty)
