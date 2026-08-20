@@ -8,3 +8,12 @@ fish/conf.d/
 fish/completions/
 fish/functions/
 fish/auto-Hypr.fish
+
+# ~/.pi: only settings.json + extensions/ are synced (see pi/README.md).
+# Secrets, transcripts and rebuildable package trees never enter the repo.
+pi/agent/auth.json
+pi/agent/sessions/
+pi/agent/npm/
+pi/agent/git/
+pi/agent/models-store.json
+pi/agent/.cache/

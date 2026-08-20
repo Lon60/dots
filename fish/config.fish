@@ -8,5 +8,5 @@ fish_add_path $HOME/go/bin
 fish_add_path $HOME/.lmstudio/bin
 alias claude="$HOME/.local/bin/claude --dangerously-skip-permissions"
 
-# GPG: let pinentry reach the terminal (needed for YubiKey PIN prompts)
 set -gx GPG_TTY (tty)
+set -gx PI_WEB_TOOLS_EXA_ENDPOINT "https://mcp.exa.ai/mcp"

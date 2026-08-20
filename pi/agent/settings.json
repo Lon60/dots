@@ -1,0 +1,15 @@
+{
+  "lastChangelogVersion": "0.84.2",
+  "defaultProvider": "anthropic",
+  "defaultModel": "claude-opus-5",
+  "defaultThinkingLevel": "xhigh",
+  "packages": [
+    "git:github.com/nil0ft/pi-extension-claude-code",
+    "git:github.com/dmmulroy/pi-web-tools",
+    "npm:pi-subagents"
+  ],
+  "warnings": {
+    "anthropicExtraUsage": false
+  },
+  "theme": "dark"
+}
